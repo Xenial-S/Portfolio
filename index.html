@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+		<link href="styles/portStyle.css" rel="stylesheet" type="text/css">
+		<script src="js/pageController.js"></script>
+		
+		<title>DW - Portfolio</title>
+	</head>
+
+	<!-- Lab 5 has been condinced down into this webpage. I know you wanted them seperate but I think this allows the website to flow better -->
+	<body onload="loadCookies();">
+		<nav class="navbar navbar-expand-lg bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#" style="color: white;">David's Portfolio</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-tager="#nav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<!-- <li class="nav-item">
+							<a onClick="switchTab('homeButton', 'homePage');" id="homeButton" class="nav-link active" aria-current="page" style="color:white;background-color: #1663be;">Home</a>
+						</li> -->
+						<li class="nav-item">
+							<a id="labOverviewButton" class="nav-link active" aria-current="page" onClick="switchTab('labOverviewButton', 'labOverviewTable');" style="color:white;background-color: #1663be;">Home / Labs (Overview)</a>
+						</li>
+						<li class="nav-item">
+							<a id="hobbyButton" class="nav-link active" aria-current="page" onClick="switchTab('hobbyButton', 'myHobbyPage')" style="color:white;">My Hobby</a>
+						</li>
+						<li class="nav-item">
+							<a id="carreerPlansButton" class="nav-link active" aria-current="page" onClick="switchTab('carreerPlansButton', 'careerPlansPage');" style="color:white;">Career Plans</a>
+						</li>
+						
+						<li class="nav-item dropdown" >
+          				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+            			Lab Pages
+          				</a>
+          				<ul class="dropdown-menu text-bg-light">
+            				<li><a class="dropdown-item" href="Lab2/about.html">Lab #1</a></li>
+            				<li><a class="dropdown-item" href="Lab2/three.html">Lab #2</a></li>
+            				<li><a class="dropdown-item" href="Lab3/Question1/egypt.html">Lab #3.1</a></li>
+            				<li><a class="dropdown-item" href="Lab3/Question2/bllnfest.html">Lab #3.2</a></li>
+            				<li><a class="dropdown-item" href="Lab4/egypt2.html">Lab #4</a></li>
+         		 		</ul>
+        				</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="homePage" style="visibility: hidden;">
+		
+		</div>
+		
+		<table id="labOverviewTable" class="table table-bordered" style="background-color: #101214; color: whitesmoke; visibility: visible;">
+			<thead>
+				<tr>
+					<th scope="col">Lab #:</th>
+					<th scope="col">Lab Description:</th>
+					<th scope="col">Lab Link:</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>About Me!</td>
+					<td><a href="../Lab2/about.html">about.html</a></td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Formatting a webpage</td>
+					<td><a href="../Lab2/three.html">three.html</a><br>
+					<a href="../Lab2/firstFormat.css">firstFormat.html</a><br>
+					<a href="../Lab2/secondFormat.css">secondFormat.html</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Working with pictures</td>
+					<td>
+						<a href="../Lab3/Question1/egypt.html">egypt.html</a>
+						<br>
+						<a href="../Lab3/Question2/bllnfest.html">bllnfest.html</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>Fun with CSS</td>
+					<td>
+						<a href="../Lab4/egypt2.html">egypt2.html</a>
+						<br>
+						<a href="../Lab4/egyptStyle.css">egyptStyle.css</a>
+						<br>
+						<a href="../Lab4/LabsOverview.html">Table/LabsOverview.html</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>Lab 5</td>
+					<td>
+						<a onClick="switchTab('hobbyButton', 'myHobbyPage')" href="#">My Hobby</a>
+						<br>
+						<a onClick="switchTab('carreerPlansButton', 'careerPlansPage')" href="#">Career Plans</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<!-- Lab 5; Part 1-->
+		<div id="myHobbyPage" style="visibility: hidden;">
+			<div class="hobbyPageDiv1">
+				<p style="color:lightblue;text-indent:110px;font-size: 25px;">My Hobby: Programming && Reverse Engineering</p>
+				<hr width="595px" style="color:whitesmoke;position: absolute;left: 145px;">
+				<br>
+				<br>
+				<p style="color:white;text-indent:10px;font-size:20px;">Im a 18yo college student whos hobby is Reverse Engineering (RE) I enjoy reversing games, programs, systems, and anything I can get my hands on. I enjoy Real World Application development, game dev, language dev, and website dev. I have made many websites in the past and one of my most recent ones was with a friend its called <a href="https://auft.io/">auft.io</a> its a messaging website like discord but its completely decenteralized and its ran on etherium. A couple of my top programming languages are C#, C++, C they are listed in order from most favorite to least.</p>
+				<p style="color:white;text-indent:10px;font-size:20px;">If you want to see some of my work check out the links catagory next to this div. I have programmed since I was 12. It started off from modding mobile games, creating menus of cheats and general improvements to games that ran bad and etc. I used to run a YT page where I gave those cheats away for free and I gained quite a large following for the time 5K subscribers before youtube struck me down for copyright and being against TOS for reverse engineering and modding of copyrighted games. But that didnt stop me. I ended up joining a large modding group called Amods.me they shut down a while ago but I gained alot of traction and met alot of really cool people who were amazing at REing games and programs. They taught me alot about memory management and detection vectors for games. My good ol friend android mods taught me how to reverse engineer encrption on games after a while of doing it. It came really easy to me. After I was tired of mobile modding I went on to mod PC games and applications and general development on PC and thats where I am today! I am happy to be where I am and im not planning on stopping anytime soon.</p>
+			</div>
+			<div class="hobbyPageDiv2">
+				<p style="color:lightblue;text-indent:230px;font-size: 25px;">Links & Pictures: Github && Auft.io</p>
+				<hr width="595px" style="color:whitesmoke;position: absolute;left: 180px;">
+				<br>
+				<br>
+				<table class="table table-bordered hobbyPageTable">
+					<thead>
+						<tr>
+							<th scope="col">Picture:</th>
+							<th scope="col">Link:</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img src="img/AuftIO.PNG" width="50%" height="180px" alt="auft.io"><img src="img/Auft2.PNG" width="50%" height="180px" alt="auft.io"></td>
+							<td><a href="https://auft.io/">auft.io</a></td>
+						</tr>
+						<tr>
+							<td><img src="img/Github.PNG" width="100%" height="210px" alt="github"></td>
+							<td><a href="https://github.com/xenial-pc">Github</a></td>
+						</tr>
+						<tr>
+							<td><img src="img/CSharpClass.PNG" width="50%%" height="190px" alt="CSharpClass"><img src="img/CSharpClass2.PNG" width="50%%" height="190px" alt="CSharpClass2"></td>
+							<td><a href="https://github.com/Xenial-PC/7DaysToCheat/blob/master/Loader.cs">Some Of My Work</a><br>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<!-- Lab 5; Part 2 -->
+		<div id="careerPlansPage" style="visibility: hidden;">
+			<div class="sideBar" style="background-color: black; position: absolute; width: 180px; height: 180px; left: 20px; top: 80px; border-style:solid; border-width:thin; border-color:aqua;">
+				<a style="color: white; position: absolute;text-indent: 50px;top: 10px">Nav: Guide</a>
+				<a id="moreInfoButton" onClick="switchTabStageTwo('moreInfoButton', 'moreInfo');" style="color: crimson;position: absolute;left: 50px;;top: 55px">More Info</a>
+				<a id="plansButton" onClick="switchTabStageTwo('plansButton', 'myCareerPlans');" style="color: crimson;position: absolute;left: 65px;top: 95px">Plans</a>
+				<a id="topLanguagesButton" onClick="switchTabStageTwo('topLanguagesButton', 'topLanguages');" style="color: crimson;position: absolute;left: 35px;top: 135px">Top Languages</a>
+				<!-- Line Spacers -->
+				<div>
+					<hr style="background-color: white; color: white; width: 180px; position: absolute; top: 30px;">
+					<hr style="background-color: white; color: white; width: 180px; position: absolute; top: 70px;">
+					<hr style="background-color: white; color: white; width: 180px; position: absolute; top: 110px;">
+					<hr style="background-color: white; color: white; width: 180px; position: absolute; top: 150px;">
+				</div>
+			</div>
+			<div id="moreInfo" style="padding: 40px; width: 1400px; height: 750px;top: 80px; left: 220px; position: absolute; border-style:solid; border-width:thin; border-color:aqua;background-color: #191b1e;visibility: hidden;">
+				<h1 style="color:whitesmoke;position: absolute;left: 620px;top: 30px;">More Info</h1>
+				<hr style="color: white;position: absolute;left: 345px;width: 710px;top: 95px;">
+				<br>
+				<p style="text-indent: 35px;position: absolute;color: white; font-size: 25px;top: 120px;">The colleges I plan on trying to get into are Suny Platsburg, Castleton and or Full Sail University. The reasons I want to get into these colleges are because they have the best for price college credit courses for Programming/Coding. These places have the highest rating in our area for the best and most obtainable courses. Some are online and some are in person. I wouldnt mind either one even though I do prefer going in person because I get to meet more pople that do similar things to what I do. Currently this year I havent met anyone who does Reverse Engineering or was into C# as much as I was.</p>
+				<p style="text-indent: 35px;position: absolute;color: white; font-size: 25px;top: 365px;">The people I have met this year are really good in different areas as they are more into Cyber Security. But I was really into that field in the past and I still quite enjoy learning those topics as they do flow quite well with my reverse engineering hobby. I have reversed engineered malware before they are very sneaky when it comes to bypassing windows detection vectors. But they are a great thing to disect and look into what methods they have used.</p>
+				</div>
+			<div id="myCareerPlans" style="padding: 40px; width: 1400px; height: 750px;top: 80px; left: 220px; position: absolute; border-style:solid; border-width:thin; border-color:aqua;background-color: #191b1e;visibility: hidden;">
+				<h1 style="color:whitesmoke;position: absolute;left: 480px;top: 30px;">My Current Career Plans</h1>
+				<hr style="color: white;position: absolute;left: 345px;width: 710px;top: 95px;">
+				<br>
+				<p style="text-indent: 35px;position: absolute;color: white; font-size: 25px;top: 120px;">My career goals is to focus on getting my 4 year college degree then go into a programming job. Google, Facebook, Real World Programming ex(fast foods, games, banking software, hospitals, libraries, etc.) hopefully eventually I will be at the spot where I can get one of these jobs. Even if its reverse engineering I would enjoy that. Maybe even if I got into white hat hacking those all seem enjoyable. I would prefer to get a job in C# as that is my main language but I would mind getting a job within C, C++ either as they are both really good languages. I don't entirely enjoy dynamically types languages but I wouldnt mind getting into AI in python or web dev if I had to. I just want to work my way up to the point where I can get a job in programming in the first place.</p>
+				<p style="text-indent: 35px;position: absolute;color: white; font-size: 25px;top: 400px;">Check my Top Languages tab to see what languages I am best at. I started programming when I was 12, so I have quite a bit of experience. Languages from HTML, CSS, JavaScript, TypeScript; to languages like C++, C#, C, Assembly. I also used Java, Go, Kotlin for mobile development. I have learned to interact with databases with SQL, MySQL, MongoDB, Microsoft SQL Server. Ive learned a couple game engines such as Unity, Unreal. I have used many different types of IDE's Visual Studio, VS Code, the command line, Android Studio, Atom, Rider, and Geany.</p>
+			</div>
+			<div id="topLanguages" class="carousel slide" data-ride="carousel" style="top: 80px; left: 220px; position: absolute; border-style:solid; border-width:thin; border-color:aqua;visibility: hidden;">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img id="topLangImages" src="img/csharp.png" alt="..." class="d-block w-100" style="height: 650px;">
+					</div>
+					 <a class="carousel-control-prev" href="#topLanguages" role="button" data-slide="prev" onClick="changeImageCarousel('prev')">
+    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    					<span class="sr-only">Previous</span>
+  					</a>
+  					<a class="carousel-control-next" href="#topLanguages" role="button" data-slide="next" onClick="changeImageCarousel('next')">
+    					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    					<span class="sr-only">Next</span>
+  					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
