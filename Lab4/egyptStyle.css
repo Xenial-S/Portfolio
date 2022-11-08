@@ -1,0 +1,85 @@
+/* CSS Document */
+body
+{
+	background-color: #F5E28D;
+}
+
+h1
+{
+	font-family: "Garamond";
+}
+
+h2
+{
+	font-family: "Garamond";
+	color: #E57367;
+}
+
+p
+{
+	color:darkslateblue;
+	font-family: "Arial";
+}
+
+p.lastP
+{
+	color: #ad2c34;
+}
+
+img.fishPic
+{
+	width: 350px;
+	height: 350px;
+}
+
+img.redsea
+{
+	width: 350px;
+	height: 350px;
+}
+
+img.obelisk
+{
+	width: 300px;
+	height: 300px;
+}
+
+img.mural
+{
+	width: 300px;
+	height: 300px;
+}
+
+img.step
+{
+	width: 300px;
+	height: 300px;
+}
+
+img.sphinx
+{
+	width: 300px;
+	height: 300px;
+}
+
+img.edfu
+{
+	width: 300px;
+	height: 300px;
+}
+
+img.abusimbel
+{
+	width: 300px;
+	height: 300px;
+}
+
+h1
+{
+	text-align: center;
+}
+
+h2
+{
+	text-align: center;
+}

@@ -1,0 +1,46 @@
+/* CSS Document */
+body
+{
+	background-color: #212529;
+}
+
+div.hobbyPageDiv1
+{
+	background-color: #101214;
+	position:absolute;
+	left: 0.5%;
+	margin-top: -395px;
+	border-style:solid;
+	border-width:thin;
+	border-color:aqua;
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left: 50px;
+	padding-right: 45px;
+	width: 910px;
+	height: 850px;
+}
+
+div.hobbyPageDiv2
+{
+	background-color:#101214;
+	position:absolute;
+	margin-top: -395px;
+	border-style:solid;
+	border-width:thin;
+	border-color:aqua;
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left: 50px;
+	margin-left: 950px;
+	width: 955px;
+	height: 850px;
+}
+
+table.hobbyPageTable
+{
+	background-color: #101214; 
+	color: whitesmoke; 
+	width: 850px; 
+	height: 655px;
+}

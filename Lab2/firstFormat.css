@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+body
+{
+	background-color: black;
+}
+
+div.headerBar
+{
+	position: absolute;
+	top: auto;
+	left: auto;
+	background-color: white;
+	width: 99%;
+	height: 5%;
+}
+
+h1.headerTag
+{
+	position: absolute;
+	top: -20px;
+	left: 5px;
+	color: green;
+}
+
+h1.headerNameTag
+{
+	position: absolute;
+	top: -20px;
+	right: 5px;
+	color: green;
+}
+
+div.moviesILike
+{
+	position: absolute;
+	top: 75px;
+	background-color: white;
+	color:darkgreen;
+	width: 350px;
+}
+
+div.moviesIHate
+{
+	position: absolute;
+	top: 75px;
+	background-color: white;
+	color:darkgreen;
+	right: 10px;
+	width: 350px;
+}
+
+
+div.moviesILikePictureList
+{
+	position: absolute;
+	top:75px;
+	left: 375px;
+	background-color: white;
+	width: 410px;
+	
+}
+
+div.moviesIHatePictureList
+{
+	position: absolute;
+	top:75px;
+	right: 375px;
+	background-color: white;
+	width: 410px;
+}
+
+h1.moviesILikeHeaderTag
+{
+	position: absolute;
+	top: -20px;
+	left: 480px;
+}
+
+h1.moviesIHateHeaderTag
+{
+	position: absolute;
+	top: -20px;
+	right: 480px;
+}
+
+button.styleSheetsButton
+{
+	width: 100px;
+	height: 45px;
+}
+
+button.styleSheetsButton2
+{
+	width: 100px;
+	height: 45px;
+}
+
+body.aboutBody
+{
+	background-color: black;
+}
+
+h1.headerNameTitle
+{
+	color: white;
+}
+
+p.paragraphTag
+{
+    color: white;
+}
+
+div.card
+{
+	background-color: white;
+}
+
+h6.card-title
+{
+	color: black;
+}
+
+p.card-text
+{
+	color: black;
+}

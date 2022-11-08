@@ -1,0 +1,35 @@
+<html>
+
+   <!--	This program introduces a new feature in JavaScript
+	that we have not seen before.  This feature allows us
+	to get information from the user as the program runs.
+	This information can then be used during the program. -->
+
+
+<head>
+<title>Getting Input in JavaScript</title>
+</head>
+
+<body>
+
+<script>
+
+	// new feature
+	var strName; // Contains the user;s name
+
+	strName = window.prompt("Please enter your first name:");
+
+
+document.write("Your name is " + strName + ". <br />");
+document.write("As you can see, this program allows you to enter your name ");
+document.write("and the program can then use this info to personalize the page. ");
+document.write("Don't you think that's kind of cool, "+ strName + "? <br />");
+
+document.write("<br />" + "Thanks for trying this program " + strName + "! <br />");
+
+
+</script>
+
+
+</body>
+</html>

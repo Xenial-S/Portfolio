@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+body
+{
+	background-color: aqua;
+}
+
+div.headerBar
+{
+	position: absolute;
+	top: auto;
+	left: auto;
+	background-color: black;
+	width: 99%;
+	height: 5%;
+}
+
+h1.headerTag
+{
+	position: absolute;
+	top: -20px;
+	left: 5px;
+	color: white;
+}
+
+h1.headerNameTag
+{
+	position: absolute;
+	top: -20px;
+	right: 5px;
+	color: white;
+}
+
+div.moviesILike
+{
+	position: absolute;
+	top: 75px;
+	background-color: black;
+	color:white;
+	width: 350px;
+}
+
+div.moviesIHate
+{
+	position: absolute;
+	top: 75px;
+	background-color: black;
+	color:white;
+	right: 10px;
+	width: 350px;
+}
+
+div.moviesILikePictureList
+{
+	position: absolute;
+	top:75px;
+	left: 375px;
+	background-color: black;
+	width: 410px;
+	
+}
+
+div.moviesIHatePictureList
+{
+	position: absolute;
+	top:75px;
+	right: 375px;
+	background-color: black;
+	width: 410px;
+}
+
+h1.moviesILikeHeaderTag
+{
+    color: white;
+	position: absolute;
+	top: -20px;
+	left: 480px;
+}
+
+h1.moviesIHateHeaderTag
+{
+    color: white;
+	position: absolute;
+	top: -20px;
+	right: 480px;
+}
+
+button.styleSheetsButton
+{
+	width: 100px;
+	height: 45px;
+}
+
+button.styleSheetsButton2
+{
+	width: 100px;
+	height: 45px;
+}
+
+ol
+{
+    color: white;
+}
+
+body.aboutBody
+{
+	background-color:cornflowerblue;
+}
+
+h1.headerNameTitle
+{
+	color: blue;
+}
+
+p.paragraphTag
+{
+    color: blue;
+}
+
+div.card
+{
+	background-color: black;
+}
+
+h6.card-title
+{
+	color: white;
+}
+
+p.card-text
+{
+	color: white;
+}

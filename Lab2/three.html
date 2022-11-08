@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>three</title>
+		<link id="style" rel="stylesheet" type="text/css" href="firstFormat.css">
+	</head>
+
+	<body>
+		<div class="headerBar">
+		<h1 class="headerTag">Movies I like & Dislike</h1>
+		<h1 class="headerNameTag">David Witherbee - Lab #2</h1>
+		<h1 class="moviesILikeHeaderTag">Movies I Like</h1>
+		<h1 class="moviesIHateHeaderTag">Movies I Hate</h1>
+		</div>
+		
+		<div class="moviesILike">
+		<ol>
+			<li>El Camino - A Breaking Bad Movie</li>
+			<br>
+			<li>Bright</li>
+			<br>
+			<li>Blair Which</li>
+			<br>
+			<button class="styleSheetsButton" type="button">firstFormat</button>
+			<button class="styleSheetsButton2" type="button">secondFormat</button>
+		</ol>
+		</div>
+		
+		<div class="moviesIHate">
+		<ol>
+			<li>The Bye Bye Man</li>
+			<br>
+			<li>UnFriended</li>
+			<br>
+			<li>Cars 2</li>
+			<br>
+		</ol>
+		</div>
+		
+		<div class="moviesILikePictureList">
+		<ol>
+			<li onclick="location.href = 'https://www.nme.com/news/el-camino-a-breaking-bad-movie-viewing-figures-us-2558503'">El Camino - A Breaking Bad Movie (click for more info)<br>
+			<img src="https://www.nme.com/wp-content/uploads/2019/10/elcamino.jpg" alt="image" style="width: 350px; height: 250px;"></li>
+			<br>
+			<li onclick="location.href = 'https://www.imdb.com/title/tt5519340/'">Bright (click for more info)<br>
+			<img src="https://m.media-amazon.com/images/M/MV5BMTcyNzk5NDg1Nl5BMl5BanBnXkFtZTgwNTM5MDQxNDM@._V1_.jpg" alt="image" style="width: 350px; height: 450px;"></li>
+			<br>
+			<li onclick="location.href = 'https://www.imdb.com/title/tt0185937/'">Blair Which (click for more info)<br>
+			<img src="https://m.media-amazon.com/images/M/MV5BZWZhN2NmN2MtMzI3Yi00YWQxLTlkMzEtNWUyNDczNmQwMDg4XkEyXkFqcGdeQXVyNjUxMDQ0MTg@._V1_.jpg" alt="image" style="width: 350px; height: 450px"></li>
+		</ol>
+		</div>
+		
+		<div class="moviesIHatePictureList">
+		<ol>
+			<li onclick="location.href ='https://www.imdb.com/title/tt4030600/'">The Bye Bye Man (click for more info)<br>
+			<img src="https://m.media-amazon.com/images/M/MV5BOWFjMDc5OGYtNzFmZC00OThhLTkxODktOWE5NmM0NWU3YmEyXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" alt="image"></li>
+			<br>
+			<li onclick="location.href ='https://www.rottentomatoes.com/m/unfriended'">UnFriended (click for more info)<br>
+			<img src="https://flxt.tmsimg.com/assets/p11183065_p_v8_ab.jpg" alt="image" style="width: 350px; height: 450px"></li>
+			<br>
+			<li onclick="location.href ='https://www.imdb.com/title/tt1216475/'">Cars 2 (click for more info)<br>
+			<img src="https://m.media-amazon.com/images/M/MV5BMTM1ODU5MDQxNV5BMl5BanBnXkFtZTcwMTQyMjAzNQ@@._V1_.jpg" alt="image" style="width: 350px; height: 450px;"></li>
+		</ol>
+		</div>
+	</body>
+
+	<script>
+		function swapStyleSheet(styleSheet) 
+		{
+    		document.getElementById("style").setAttribute("href", styleSheet);  
+		}
+
+		var styleSheet1 = document.getElementsByClassName("styleSheetsButton")[0];
+    	var styleSheet2 = document.getElementsByClassName("styleSheetsButton2")[0];
+
+		styleSheet1.onclick = function () { swapStyleSheet("firstFormat.css") };
+		styleSheet2.onclick = function () { swapStyleSheet("secondFormat.css"); };
+	</script>
+</html>

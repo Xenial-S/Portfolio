@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <!--	This program introduces some new features in JavaScript
+	that we have not seen before.  These features allow us
+	to get information from the user as the program runs.
+	This information can then be used during the program. -->
+
+<head>
+<title>More about window.prompt feature</title>
+</head>
+
+<body>
+
+<script>
+
+	// Variable declarations
+	var num1; 		// The first #
+	var num2;		// The second #
+	var result1; 	// Stores the concatenated result
+	var result2;	// Stores the integer addition result
+	
+	num1 = window.prompt("Please enter a 3-digit number");
+	document.write("Your first number was " + num1 + "<br />");
+
+	num2 = window.prompt("Please enter a 2-digit number");
+	document.write("Your second number was " + num2 + "<br />");
+
+	document.write("<br /> The first attempt at adding gives an answer of: <br />");
+	result1 = num1 + num2;
+	document.write(result1 + "<br />");
+
+
+
+	document.write("<br />The second attempt at adding gives an answer of: <br />");
+
+	// Something new coming next!
+	result2 = parseInt(num1) + parseInt(num2);
+	document.write(result2 + "<br />");
+	
+	if (result1 != result2)
+		document.write("<br />" + "Why aren't they the same??" + "<br />");
+	else
+		document.write("<br />" + "Not surprising really!" + "<br />");
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+JavaScript allows us to add text to our web pages in a new way.  These lines of text are being displayed using basic HTML code which we have learned previously.  We certainly have demonstrated our skills in HTML on many occasions already.
+
+However, these lines of text are being produced using JavaScript code.  While this may not be terribly impressive right now, as we learn more JavaScript, we’ll be able to do more exciting things with it.  For now it’s just a matter of learning the basics.
+
+We also need to realize that we can switch back and forth, so this text should be created using HTML code again.  This way we realize that we can incorporate the best of both worlds into our web pages.
+
+However, in JavaScript, we still have a lot to learn.  Right now, printing text to the screen may not seem that impressive, but we must learn to walk before we can run.  The best is yet to come!

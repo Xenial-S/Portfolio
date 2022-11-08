@@ -1,0 +1,2 @@
+// JavaScript Document
+document.write("<p>However, in JavaScript, we still have a lot to learn.  Right now, printing text to the screen may not seem that impressive, but we must learn to walk before we can run.  The best is yet to come!</p>");

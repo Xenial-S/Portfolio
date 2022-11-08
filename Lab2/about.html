@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lab #1 - Building A Webpage</title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+		
+		<link id="style" rel="stylesheet" type="text/css" href="firstFormat.css">
+	</head>
+
+	<body class="aboutBody">
+		<h1 class="headerNameTitle">David Witherbee</h1>
+		
+		<button type="button" class="btn btn-primary" id="eatSomeToastBtn">Click Me!</button>
+		<button class="styleSheetsButton" type="button">firstFormat</button>
+		<button class="styleSheetsButton2" type="button">secondFormat</button>
+
+		<div class="toast-container position-fixed bottom-0 end-0 p-3">
+			<div id="eatSomeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mr._Smiley_Face.svg/2000px-Mr._Smiley_Face.svg.png" class="rounded me-2" alt="image" style="width: 50px; height: 50px;">
+				<strong class="me-auto">Hello Sorry, I got a bit bored lol</strong>
+				<small>I wont lose points for this right?</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+			I dont know what else to do after this feeling kinda lazy now
+			</div>
+		</div>
+		</div>
+		
+		<div style="left: auto">
+		<p class="paragraphTag">Hello, My name is David Witherbee im a 18yo College student whos hobby is Reverse Engineering,<br>Real World Application Development, Game Dev, Language Dev, and OS dev. </p>
+		</div>
+		
+		<div class="card" style="width: 18rem;">
+			<img src="https://image.cnbcfm.com/api/v1/image/106349589-1579720435046gettyimages-1192592454.jpeg?v=1579721288&w=929&h=523" class="card-img-top" alt="">
+			<h6 class="card-title">This Is A Link To My Github:</h6>
+			<p class="card-text">Tips To Success In programming!</p>
+			<ol>
+			<li>Google Is Your Best Friend For Programming!</li>
+			<li>Learn The Debugger, Its The Most Useful Tool For Any Programmer</li>
+			<li style="color:red;">Warning: The Debugger Will Slowly Suck Your Life Away From You! Its Already Made Its Way Into My Nightmares</li>
+			</ol>
+			<a href="https://github.com/xenial-pc" class="btn btn-primary">Go To My Github</a>
+			<a href="http://auft.io/" class="btn btn-primary">Go To My Website</a>
+			<a href="https://www.google.com" class="btn btn-primary">Go To Google!</a>
+		</div>
+		
+		<script>
+		const toastTrigger = document.getElementById('eatSomeToastBtn');
+		const toastEvent = document.getElementById('eatSomeToast');
+		const toast = new bootstrap.Toast(toastEvent);
+    	
+		toast.show();
+		if (toastTrigger) 
+		{
+  			toastTrigger.addEventListener('click', () => {
+    		toast = new bootstrap.Toast(toastEvent);
+    		toast.show();
+  			});
+		}
+
+		function swapStyleSheet(styleSheet) 
+		{
+    		document.getElementById("style").setAttribute("href", styleSheet);  
+		}
+
+		var styleSheet1 = document.getElementsByClassName("styleSheetsButton")[0];
+    	var styleSheet2 = document.getElementsByClassName("styleSheetsButton2")[0];
+
+		styleSheet1.onclick = function () { swapStyleSheet("firstFormat.css") };
+		styleSheet2.onclick = function () { swapStyleSheet("secondFormat.css"); };
+		</script>
+	</body>
+</html>
